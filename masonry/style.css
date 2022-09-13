@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .bounce-in {
   /* name | duration | easing-function | delay */
   animation: bounceIn 1.5s ease 0.5s;
@@ -25,17 +29,16 @@ img {
 
 @keyframes bounceIn {
   0% { 
-     opacity: 0; 
-     transform: scale(.3);
+    opacity: 0; 
+    transform: scale(.3);
   }
   50% { 
-     opacity: 1;
-     transform: scale(1.05);
+    transform: scale(1.05);
   }
   70% {
-     transform: scale(.9);
+    transform: scale(1);
   }
   100% {
-     transform: scale(1);
+    opacity: 1;
   }
 } 
