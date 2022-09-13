@@ -1,0 +1,19 @@
+.grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.grid-sizer, .grid-item {
+  width: 33.333%;
+}
+
+.grid-item div {
+  padding: 8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
