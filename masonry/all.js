@@ -17,7 +17,10 @@ const bounceInImages = () => {
   index ++;
   if (index < items.length) {
     // 要自己call自己才有下一次
-    window.requestAnimationFrame(bounceInImages);
+    // window.requestAnimationFrame(bounceInImages);
+    setTimeout(() => {
+      window.requestAnimationFrame(bounceInImages);
+    }, '150');
   }
 };
 
